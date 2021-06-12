@@ -21,7 +21,7 @@ pipeline {
                 echo "checkout"
                 checkout([$class: 'GitSCM', branches: [[name: "${params.branch}"]],
                 extensions: [], 
-                userRemoteConfigs: [[url: 'https://github.com/AbinayaRavikannan/webapplication.git']]])
+                userRemoteConfigs: [[url: 'https://github.com/pankajingarud/webapplication.git']]])
         }
         }
         stage('test case'){
